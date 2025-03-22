@@ -3,6 +3,9 @@ import { Link } from "react-router";
 import x from "../assets/images/plating_art_about_tacos_casual.jpeg"
 import weatherapp  from "../assets/images/weather-app.png"
 import AsukasAreenaImg from "../assets/images/asukas-areena-img.png"
+import PretzelImg from "../assets/images/pretzel-website.png"
+import CitrusImg from "../assets/images/citrus-cafe.png"
+
 
 const projects = [
   {
@@ -19,6 +22,16 @@ const projects = [
     title: "Asukas Areena",
     image: AsukasAreenaImg,
     link: "/asukas-areena",
+  },
+  {
+    title: "Pretzel Website",
+    image: PretzelImg,
+    link: "/pretzel-website",
+  },
+  {
+    title: "Citrus Cafe",
+    image: CitrusImg,
+    link: "/citrus-cafe",
   },
 ];
 
