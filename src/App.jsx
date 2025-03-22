@@ -7,6 +7,7 @@ import WeatherAppPage from './pages/WeatherAppPage'
 import AsukasAreena from './pages/AsukasAreena'
 import PretzelWebsite from './pages/PretzelWebsite'
 import CitrusCafe from './pages/CitrusCafe'
+import BusinessCollegeHelsinkiProjects from './pages/BusinessCollegeHelsinkiProjects'
 
 
 
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/citrus-cafe",
         element: <CitrusCafe />
+      },
+      {
+        path: "/business-college-helsinki-projects",
+        element: <BusinessCollegeHelsinkiProjects />
       },
 
     ]

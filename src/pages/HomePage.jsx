@@ -33,6 +33,11 @@ const projects = [
     image: CitrusImg,
     link: "/citrus-cafe",
   },
+  {
+    title: "Business College Helsinki mini projects",
+    image: x,
+    link: "/business-college-helsinki-projects"
+  }
 ];
 
 const HomePage = () => {
