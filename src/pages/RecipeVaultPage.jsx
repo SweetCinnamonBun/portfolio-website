@@ -1,5 +1,5 @@
 import React from "react";
-import x from "../assets/images/plating_art_about_tacos_casual.jpeg"; // Assuming this image exists in your project
+import x from "../assets/images/recipevault.png"; // Assuming this image exists in your project
 
 const RecipeVaultPage = () => {
   return (
@@ -28,11 +28,11 @@ const RecipeVaultPage = () => {
 
       <div className="max-w-4xl w-full text-center my-10 ">
         <p className="text-lg text-gray-700">
-          Recipe Vault is a web application that allows users to store and
-          organize their favorite recipes. Users can easily add, edit, and
-          filter their recipes based on ingredients, categories, and tags. The
-          app provides an intuitive interface for managing recipes, including
-          options for adding images, instructions, and preparation time.
+          Recipe Vault is a full-stack website that allows users to create
+          recipes and view other users recipes. Users can easily update their
+          recipes, delete their own recipes and add recipes to their favorites
+          list. Users can filter recipes based on common categories and can give
+          comments and ratings to recipes.
         </p>
       </div>
 

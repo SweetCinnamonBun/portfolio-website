@@ -1,5 +1,5 @@
 import React from "react";
-import x from "../assets/images/plating_art_about_tacos_casual.jpeg";
+import x from "../assets/images/mini-projects.png";
 
 const BusinessCollegeHelsinkiProjects = () => {
   return (

@@ -1,11 +1,16 @@
 import React from "react";
 import { Link } from "react-router";
-import x from "../assets/images/plating_art_about_tacos_casual.jpeg"
-import weatherapp  from "../assets/images/weather-app.png"
-import AsukasAreenaImg from "../assets/images/asukas-areena-img.png"
-import PretzelImg from "../assets/images/pretzel-website.png"
-import CitrusImg from "../assets/images/citrus-cafe.png"
-
+import x from "../assets/images/recipevault.png";
+import weatherapp from "../assets/images/weather-app.png";
+import AsukasAreenaImg from "../assets/images/asukas-areena-img.png";
+import PretzelImg from "../assets/images/pretzel-website.png";
+import CitrusImg from "../assets/images/citrus-cafe.png";
+import profileImg from "../assets/images/Rectangle 15.png";
+import firstName from "../assets/images/firstName.png";
+import lastName from "../assets/images/lastName.png";
+import TestPfp from "../assets/images/test-pfp.png";
+import MiniProjects from "../assets/images/mini-projects.png"
+import { FaBriefcase } from "react-icons/fa";
 
 const projects = [
   {
@@ -35,18 +40,37 @@ const projects = [
   },
   {
     title: "Business College Helsinki mini projects",
-    image: x,
-    link: "/business-college-helsinki-projects"
-  }
+    image: MiniProjects,
+    link: "/business-college-helsinki-projects",
+  },
 ];
 
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen  p-6">
-      <h1 className="text-3xl font-bold text-center mb-6">My Projects</h1>
+      <div className="flex gap-4 mb-20">
+        <figure>
+          <img src={firstName} alt="" />
+        </figure>
+        <figure>
+          <img src={lastName} alt="" />
+        </figure>
+      </div>
+      <div className="">
+        <figure className="w-64 h-64 rounded-full  border-3 border-black">
+          <img src={TestPfp} alt="" className="w-full h-full rounded-full" />
+        </figure>
+      </div>
+      <div className="flex items-center w-full max-w-6xl gap-4 mt-20">
+        <FaBriefcase className="w-8 h-8" />
+        <h1 className="text-3xl font-bold">My Projects</h1>
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full mt-20">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+          <div
+            key={index}
+            className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105"
+          >
             <img
               src={project.image}
               alt={project.title}
@@ -56,10 +80,10 @@ const HomePage = () => {
               <h2 className="text-xl font-semibold mb-5">{project.title}</h2>
               <div className="flex justify-end">
                 <Link
-                    to={project.link}
-                    className="bg-yellow-200 px-4 py-2 rounded-lg hover:underline"
+                  to={project.link}
+                  className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 px-4 py-2 rounded-lg hover:underline text-white font-bold"
                 >
-                    View Project
+                  View Project
                 </Link>
               </div>
             </div>
