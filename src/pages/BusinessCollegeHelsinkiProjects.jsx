@@ -4,7 +4,7 @@ import x from "../assets/images/mini-projects.png";
 const BusinessCollegeHelsinkiProjects = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6 ">
-      <h1 className="text-3xl font-bold text-center mb-6">Recipe Vault</h1>
+      <h1 className="text-3xl font-bold text-center mb-6">Business College Helsinki Mini Projects</h1>
 
       <div className="my-10 w-1/3">
         <img
