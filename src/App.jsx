@@ -8,6 +8,7 @@ import AsukasAreena from './pages/AsukasAreena'
 import PretzelWebsite from './pages/PretzelWebsite'
 import CitrusCafe from './pages/CitrusCafe'
 import BusinessCollegeHelsinkiProjects from './pages/BusinessCollegeHelsinkiProjects'
+import ArtGalleryPage from './pages/ArtGalleryPage'
 
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
         path: "/business-college-helsinki-projects",
         element: <BusinessCollegeHelsinkiProjects />
       },
+      {
+        path: "/art-gallery-website",
+        element: <ArtGalleryPage />
+      }
 
     ]
   }

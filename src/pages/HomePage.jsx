@@ -5,12 +5,12 @@ import weatherapp from "../assets/images/weather-app.png";
 import AsukasAreenaImg from "../assets/images/asukas-areena-img.png";
 import PretzelImg from "../assets/images/pretzel-website.png";
 import CitrusImg from "../assets/images/citrus-cafe.png";
-import profileImg from "../assets/images/Rectangle 15.png";
 import firstName from "../assets/images/firstName.png";
 import lastName from "../assets/images/lastName.png";
 import TestPfp from "../assets/images/test-pfp.png";
 import MiniProjects from "../assets/images/mini-projects.png"
 import { FaBriefcase } from "react-icons/fa";
+import ArtGalleryImg from "../assets/images/art-gallery-example.png"
 
 const projects = [
   {
@@ -27,6 +27,11 @@ const projects = [
     title: "Asukas Areena",
     image: AsukasAreenaImg,
     link: "/asukas-areena",
+  },
+  {
+    title: "ArtGallery",
+    image: ArtGalleryImg,
+    link: "/art-gallery-website",
   },
   {
     title: "Pretzel Website",
