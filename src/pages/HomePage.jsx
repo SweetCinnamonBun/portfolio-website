@@ -8,9 +8,9 @@ import CitrusImg from "../assets/images/citrus-cafe.png";
 import firstName from "../assets/images/firstName.png";
 import lastName from "../assets/images/lastName.png";
 import TestPfp from "../assets/images/test-pfp.png";
-import MiniProjects from "../assets/images/mini-projects.png"
+import MiniProjects from "../assets/images/mini-projects.png";
 import { FaBriefcase } from "react-icons/fa";
-import ArtGalleryImg from "../assets/images/art-gallery-example.png"
+import ArtGalleryImg from "../assets/images/art-gallery-example.png";
 
 const projects = [
   {
@@ -72,27 +72,18 @@ const HomePage = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl w-full mt-20">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-64 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-5">{project.title}</h2>
-              <div className="flex justify-end">
-                <Link
-                  to={project.link}
-                  className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 px-4 py-2 rounded-lg hover:underline text-white font-bold"
-                >
-                  View Project
-                </Link>
+          <Link to={project.link} key={index}>
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <h2 className="text-xl font-semibold mb-5">{project.title}</h2>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

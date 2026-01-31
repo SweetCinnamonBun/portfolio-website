@@ -19,15 +19,15 @@ const RecipeVaultPage = () => {
           <a
             href="https://recipevault.azurewebsites.net"
             target="_blank" // Opens in a new tab
-            className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 px-4 py-2 rounded-lg text-xl font-semibold text-white hover:underline"
+            className="bg-gradient-to-r from-violet-400 via-violet-500 to-violet-400 px-4 py-2 rounded-lg text-xl font-semibold text-white hover:underline"
           >
             View Project
           </a>
         </div>
       </div>
 
-      <div className="max-w-4xl w-full text-center my-10 ">
-        <p className="text-lg text-gray-700">
+      <div className="max-w-4xl w-full text-center my-10 bg-white px-4 py-10 rounded-lg shadow-lg">
+        <p className="text-lg text-gray-800">
           Recipe Vault is a full-stack website that allows users to create
           recipes and view other users recipes. Users can easily update their
           recipes, delete their own recipes and add recipes to their favorites
