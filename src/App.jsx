@@ -9,6 +9,7 @@ import PretzelWebsite from './pages/PretzelWebsite'
 import CitrusCafe from './pages/CitrusCafe'
 import BusinessCollegeHelsinkiProjects from './pages/BusinessCollegeHelsinkiProjects'
 import ArtGalleryPage from './pages/ArtGalleryPage'
+import DjangoTodoPage from './pages/DjangoTodoPage'
 
 
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/art-gallery-website",
         element: <ArtGalleryPage />
+      },
+      {
+        path: "/django-todo",
+        element: <DjangoTodoPage />
       }
 
     ]
