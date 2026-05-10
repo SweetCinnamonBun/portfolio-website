@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
 import { HiMenu, HiX } from "react-icons/hi";
+import Logo from "../assets/images/logo.png"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -9,7 +10,9 @@ const Navbar = () => {
     <nav className="w-full bg-[#A8DF8E]">
       <div className="max-w-6xl mx-auto  py-7 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold tracking-wide">
-          RomanKlemiato
+          <figure>
+            <img src={Logo} alt="logo" />
+          </figure>
         </Link>
         <div className="hidden md:flex gap-8 text-lg">
           <Link to="/" className="hover:bg-violet-400 transition bg-white border-2 text-black px-4 py-1 rounded-xl">

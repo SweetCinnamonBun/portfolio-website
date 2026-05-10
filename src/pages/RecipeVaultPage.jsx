@@ -14,16 +14,30 @@ const RecipeVaultPage = () => {
         />
       </div>
 
-      <div>
-        <div className="mt-6">
-          <a
-            href="https://recipevault.azurewebsites.net"
-            target="_blank" // Opens in a new tab
-            className="bg-gradient-to-r from-violet-400 via-violet-500 to-violet-400 px-4 py-2 rounded-lg text-xl font-semibold text-white hover:underline"
-          >
-            View Project
-          </a>
-        </div>
+      <div className="flex gap-4 mt-6">
+        {/* Disabled Live Preview Link */}
+        <a
+          href="https://recipevault.azurewebsites.net"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.preventDefault()}
+          className="px-4 py-2 rounded-lg text-lg font-semibold text-white
+    bg-gray-500 opacity-50 cursor-not-allowed pointer-events-none"
+        >
+          Live Preview
+        </a>
+
+        {/* GitHub Button */}
+        <a
+          href="https://github.com/SweetCinnamonBun/recipevault"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 py-2 rounded-lg text-lg font-semibold text-white
+    bg-gradient-to-r from-black via-gray-800 to-black
+    hover:opacity-90 transition"
+        >
+          GitHub
+        </a>
       </div>
 
       <div className="max-w-4xl w-full text-center my-10 bg-white px-4 py-10 rounded-lg shadow-lg">

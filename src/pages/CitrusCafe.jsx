@@ -19,7 +19,7 @@ const CitrusCafe = () => {
                  <a
                    href="https://sweetcinnamonbun.github.io/09-sovella-flexboxia/"
                    target="_blank" 
-                   className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-orange-400 px-4 py-2 rounded-lg text-xl font-semibold text-white hover:underline"
+                   className="bg-gradient-to-r from-violet-400 via-violet-500 to-violet-400 px-4 py-2 rounded-lg text-xl font-semibold text-white hover:underline"
                  >
                    View Project
                  </a>

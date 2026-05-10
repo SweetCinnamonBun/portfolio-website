@@ -9,6 +9,7 @@ import firstName from "../assets/images/firstName.png";
 import lastName from "../assets/images/lastName.png";
 import TestPfp from "../assets/images/test-pfp.png";
 import MiniProjects from "../assets/images/mini-projects.png";
+import Logo from "../assets/images/logo.png";
 import DjangoTodoImg from "../assets/images/django-todo.png";
 import {
   FaBriefcase,
@@ -74,6 +75,14 @@ const Star = () => {
     </span>
   );
 };
+const EmptyStar = () => {
+  return (
+    <span className="relative inline-block w-6 h-6">
+      <IoStarOutline className="absolute inset-0 w-6 h-6 text-black" />
+      <IoStar className="absolute inset-0 w-6 h-6 text-white  scale-80" />
+    </span>
+  );
+};
 
 const HomePage = () => {
   return (
@@ -87,7 +96,7 @@ const HomePage = () => {
             <figure>
               <img src={lastName} alt="" />
             </figure>
-            <p className="text-2xl w-96">
+            <p className="text-2xl w-[460px]">
               Hello there! I'm Roman and I'm a wannabe Full stack dev.
             </p>
             <div className="flex gap-2">
@@ -172,7 +181,7 @@ const HomePage = () => {
                     <Star />
                     <Star />
                     <Star />
-                    <Star />
+                    <EmptyStar />
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
@@ -189,11 +198,11 @@ const HomePage = () => {
             </div>
             <div className="h-92 bg-white w-full max-w-96 pt-5 px-2   shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] border-2">
               <h3 className="text-center text-lg underline font-bold ">
-                FRONTEND
+                BACKEND
               </h3>
               <div className="grid grid-cols-2 gap-5 mt-5 ">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">HTML & CSS</h4>
+                  <h4 className="text-center">.NET Web API</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -203,34 +212,54 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Javascript</h4>
+                  <h4 className="text-center">Express.js</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
                     <Star />
                     <Star />
-                    <Star />
+                    <EmptyStar />
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">React</h4>
+                  <h4 className="text-center">Azure</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
                     <Star />
                     <Star />
+                    <EmptyStar />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <h4 className="text-center">Strapi</h4>
+                  <div className="flex gap-1">
                     <Star />
+                    <Star />
+                    <Star />
+                    <EmptyStar />
+                    <EmptyStar />
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <h4 className="text-center">Django</h4>
+                  <div className="flex gap-1">
+                    <Star />
+                    <Star />
+                    <Star />
+                    <EmptyStar />
+                    <EmptyStar />
                   </div>
                 </div>
               </div>
             </div>
             <div className="h-92 bg-white w-full max-w-96 pt-5 px-2   shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] border-2">
               <h3 className="text-center text-lg underline font-bold ">
-                FRONTEND
+                DATABASES
               </h3>
               <div className="grid grid-cols-2 gap-5 mt-5 ">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">HTML & CSS</h4>
+                  <h4 className="text-center">SQLServer</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -240,23 +269,23 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Javascript</h4>
+                  <h4 className="text-center">PostgreSQL</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
                     <Star />
                     <Star />
-                    <Star />
+                    <EmptyStar />
                   </div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">React</h4>
+                  <h4 className="text-center">MongoDB</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
                     <Star />
-                    <Star />
-                    <Star />
+                    <EmptyStar />
+                    <EmptyStar />
                   </div>
                 </div>
               </div>
@@ -318,7 +347,7 @@ const HomePage = () => {
           </div>
         </section>
       </section>
-      <footer className="mt-24 w-full border-t pt-6 pb-4 text-center text-white bg-black">
+      <footer className="mt-24 w-full pt-6 pb-4 text-center border-t">
         <p>© {new Date().getFullYear()} Roman Klemiato. All rights reserved.</p>
       </footer>
     </div>
