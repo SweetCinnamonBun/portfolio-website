@@ -97,7 +97,7 @@ const HomePage = () => {
               <img src={lastName} alt="" />
             </figure>
             <p className="text-2xl w-[460px]">
-              Hello there! I'm Roman and I'm a wannabe Full stack dev.
+              Hello there! I'm Roman and I'm a junior full stack developer.
             </p>
             <div className="flex gap-2">
               <button className="bg-black text-white px-8 py-2 rounded-xl text-xl flex gap-2 items-center cursor-pointer transition hover:bg-gray-700">
