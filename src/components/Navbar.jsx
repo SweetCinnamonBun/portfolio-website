@@ -7,7 +7,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#A8DF8E]">
+    <nav className="w-full ">
       <div className="max-w-6xl mx-auto  py-7 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold tracking-wide">
           <figure>

@@ -4,7 +4,7 @@ import PretzelImg from "../assets/images/pretzel-website.png"
 
 const PretzelWebsite = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-6 ">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6">
           <h1 className="text-3xl font-bold text-center mb-6">Pretzel Website</h1>
     
           <div className="my-10 w-1/3">
@@ -28,14 +28,15 @@ const PretzelWebsite = () => {
           </div>
     
           <div className="max-w-4xl w-full text-center my-10 ">
-            <p className="text-lg text-gray-700">
+            <p className="text-lg text-white">
               A small HTML & CSS project that I made during my studies in Business College Helsinki. 
             </p>
           </div>
     
-          <div className="bg-white shadow-lg rounded-lg p-6 max-w-4xl w-full mb-6">
+          <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg p-6 max-w-4xl w-full mb-6 ">
             <h2 className="text-2xl font-semibold mb-4">Tech Stack</h2>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
+            <ul className="list-disc pl-6 space-y-2 text-white">
               <li>
                 <strong>Frontend:</strong> HTML & CSS
               </li>

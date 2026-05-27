@@ -16,14 +16,15 @@ const BusinessCollegeHelsinkiProjects = () => {
 
 
       <div className="max-w-4xl w-full text-center my-10 ">
-        <p className="text-lg text-gray-700">
+        <p className="text-lg text-white">
           Here are some mini projects that I made during my studies in Business
           College Helsinki. Some of them are a part of the{" "}
           <strong>Full stack open</strong> {" "} course.
         </p>
       </div>
 
-      <div className="w-full max-w-4xl  mb-10 rounded-lg bg-white shadow-lg">
+      <div className="w-full max-w-4xl  mb-10 rounded-lg bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)] ">
         <ul className="list-disc px-10 space-y-3 py-5 ">
           <li className="text-lg">
             {" "}
@@ -83,9 +84,10 @@ const BusinessCollegeHelsinkiProjects = () => {
         </ul>
       </div>
 
-      <div className="bg-white shadow-lg rounded-lg p-6 max-w-4xl w-full mb-6">
+      <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg p-6 max-w-4xl w-full mb-6">
         <h2 className="text-2xl font-semibold mb-4">Tech Stack</h2>
-        <ul className="list-disc pl-6 space-y-2 text-gray-700">
+        <ul className="list-disc pl-6 space-y-2 text-white">
           <li>
             <strong>Frontend:</strong> React, HTML & CSS
           </li>

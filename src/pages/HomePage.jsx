@@ -90,48 +90,57 @@ const HomePage = () => {
       <div className="grid grid-cols-2 w-full max-w-6xl mt-10 ">
         <div className="flex gap-4 mb-20">
           <div className="flex flex-col space-y-4">
-            <figure>
+            <figure className="bg-white w-[299px] py-4 px-3">
               <img src={firstName} alt="" />
             </figure>
-            <figure>
+            <figure className="bg-black w-[299px] py-4 px-3">
               <img src={lastName} alt="" />
             </figure>
             <p className="text-2xl w-[460px]">
               Hello there! I'm Roman and I'm a junior full stack developer.
             </p>
-            <div className="flex gap-2">
-              <button className="bg-black text-white px-8 py-2 rounded-xl text-xl flex gap-2 items-center cursor-pointer transition hover:bg-gray-700">
-                <FaFilePdf /> CV
+            <div className="flex gap-3 mt-4">
+              <button className="px-6 py-3 rounded-2xl flex items-center gap-2 text-white bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+                <FaFilePdf className="text-red-300" />
+                CV
               </button>
-              <button className="bg-black text-white px-8 py-2 rounded-xl text-xl flex gap-2 items-center cursor-pointer transition hover:bg-gray-700">
-                <FaFilePdf /> CV English
+
+              <button className="px-6 py-3 rounded-2xl flex items-center gap-2 text-white bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
+                <FaFilePdf className="text-red-300" />
+                CV English
               </button>
             </div>
-            <div className="flex mt-2 gap-2">
-              <Link to="https://github.com/SweetCinnamonBun" target="_blank">
-                <FaGithubSquare className="w-14 h-14" />
+            <div className="flex mt-4 gap-3">
+              <Link
+                to="https://github.com/SweetCinnamonBun"
+                target="_blank"
+                className="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition"
+              >
+                <FaGithubSquare className="w-10 h-10 text-white" />
               </Link>
+
               <Link
                 to="https://www.linkedin.com/in/roman-klemiato-070616223/"
                 target="_blank"
+                className="p-3 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition"
               >
-                <FaLinkedin className="w-14 h-14" />
+                <FaLinkedin className="w-10 h-10 text-[#60a5fa]" />
               </Link>
             </div>
           </div>
         </div>
         <div className="flex justify-center -mt-5">
-          <figure className="w-80 h-80 rounded-full   border-3 border-black">
+          <figure className="w-80 h-80 rounded-full   border-3 border-white">
             <img src={TestPfp} alt="" className="w-full h-full rounded-full " />
           </figure>
         </div>
       </div>
       {/* About section */}
-      <section className="w-full mt-20 bg-gradient-to-br from-green-900 via-emerald-700 to-lime-400 text-white py-20 grid place-items-center">
+      <section className="w-full  mt-20  text-white py-20 grid place-items-center">
         <div className="w-full max-w-6xl">
           <div className="flex items-center gap-4 mb-10">
             <IoStarOutline className="w-8 h-8" />
-            <h2 className="text-3xl font-bold">About Me</h2>
+            <h2 className="text-3xl font-bold text-amber-200">About Me</h2>
           </div>
 
           <div className="max-w-3xl">
@@ -152,20 +161,27 @@ const HomePage = () => {
         </div>
       </section>
       {/* Skills section */}
-      <section className="w-full flex items-center justify-center bg-[#FFECC0] pb-30">
+      <section className="w-full flex items-center justify-center pb-30">
         <section className="w-full max-w-6xl">
           <div className="flex items-center w-full max-w-6xl gap-4 mt-20 mb-14">
-            <FaLaptopCode className="w-8 h-8" />
-            <h1 className="text-3xl font-bold">My Skills</h1>
+            <FaLaptopCode className="w-8 h-8 " />
+            <h1 className="text-3xl font-bold text-amber-200">My Skills</h1>
           </div>
-          <div className="flex gap-14">
-            <div className="h-92 bg-white w-full max-w-96 pt-5 px-2  shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] border-2">
-              <h3 className="text-center text-lg underline font-bold ">
+
+          <div className="flex gap-10">
+            {/* FRONTEND */}
+            <div
+              className="h-92 w-full max-w-96 pt-5 px-4 rounded-2xl
+                      bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)] text-white"
+            >
+              <h3 className="text-center text-lg underline font-bold text-cyan-300">
                 FRONTEND
               </h3>
-              <div className="grid grid-cols-2 gap-5 mt-5 ">
+
+              <div className="grid grid-cols-2 gap-5 mt-5">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">HTML & CSS</h4>
+                  <h4>HTML & CSS</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -174,8 +190,9 @@ const HomePage = () => {
                     <Star />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Javascript</h4>
+                  <h4>Javascript</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -184,8 +201,9 @@ const HomePage = () => {
                     <EmptyStar />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">React</h4>
+                  <h4>React</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -196,13 +214,20 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="h-92 bg-white w-full max-w-96 pt-5 px-2   shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] border-2">
-              <h3 className="text-center text-lg underline font-bold ">
+
+            {/* BACKEND */}
+            <div
+              className="h-92 w-full max-w-96 pt-5 px-4 rounded-2xl
+                      bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)] text-white"
+            >
+              <h3 className="text-center text-lg underline font-bold text-cyan-300">
                 BACKEND
               </h3>
-              <div className="grid grid-cols-2 gap-5 mt-5 ">
+
+              <div className="grid grid-cols-2 gap-5 mt-5">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">.NET Web API</h4>
+                  <h4>.NET Web API</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -211,8 +236,9 @@ const HomePage = () => {
                     <Star />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Express.js</h4>
+                  <h4>Express.js</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -221,8 +247,9 @@ const HomePage = () => {
                     <EmptyStar />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Azure</h4>
+                  <h4>Azure</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -231,8 +258,9 @@ const HomePage = () => {
                     <EmptyStar />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Strapi</h4>
+                  <h4>Strapi</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -241,8 +269,9 @@ const HomePage = () => {
                     <EmptyStar />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">Django</h4>
+                  <h4>Django</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -253,13 +282,20 @@ const HomePage = () => {
                 </div>
               </div>
             </div>
-            <div className="h-92 bg-white w-full max-w-96 pt-5 px-2   shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] border-2">
-              <h3 className="text-center text-lg underline font-bold ">
+
+            {/* DATABASES */}
+            <div
+              className="h-92 w-full max-w-96 pt-5 px-4 rounded-2xl
+                      bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)] text-white"
+            >
+              <h3 className="text-center text-lg underline font-bold text-cyan-300">
                 DATABASES
               </h3>
-              <div className="grid grid-cols-2 gap-5 mt-5 ">
+
+              <div className="grid grid-cols-2 gap-5 mt-5">
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">SQLServer</h4>
+                  <h4>SQLServer</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -268,8 +304,9 @@ const HomePage = () => {
                     <Star />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">PostgreSQL</h4>
+                  <h4>PostgreSQL</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -278,8 +315,9 @@ const HomePage = () => {
                     <EmptyStar />
                   </div>
                 </div>
+
                 <div className="flex flex-col items-center">
-                  <h4 className="text-center">MongoDB</h4>
+                  <h4>MongoDB</h4>
                   <div className="flex gap-1">
                     <Star />
                     <Star />
@@ -296,17 +334,18 @@ const HomePage = () => {
       <section className=" w-full mt-10 grid place-items-center">
         <div className="flex items-center w-full max-w-6xl gap-4 mt-20">
           <FaBriefcase className="w-8 h-8" />
-          <h1 className="text-3xl font-bold">My Projects</h1>
+          <h1 className="text-3xl font-bold text-amber-200">My Projects</h1>
         </div>
 
         {/* FULLSTACK PROJECTS */}
-        <section className="w-full max-w-6xl mt-14 ">
-          <h2 className="text-2xl font-bold mb-8">Fullstack Projects</h2>
+        <section className="w-full max-w-6xl mt-14 text-black">
+          <h2 className="text-2xl font-bold mb-8 text-white underline">Fullstack Projects</h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {fullstackProjects.map((project, index) => (
               <Link to={project.link} key={index}>
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -325,18 +364,19 @@ const HomePage = () => {
 
         {/* FRONTEND PROJECTS */}
         <section className="w-full max-w-6xl mt-20">
-          <h2 className="text-2xl font-bold mb-8">Frontend Projects</h2>
+          <h2 className="text-2xl font-bold mb-8 text-white underline">Frontend Projects</h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
             {projects.map((project, index) => (
-              <Link to={project.link} key={index}>
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105">
+              <Link to={project.link} key={index} className="">
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-64 object-cover"
                   />
-                  <div className="p-4">
+                  <div className="p-4 h-24">
                     <h2 className="text-xl font-semibold mb-5">
                       {project.title}
                     </h2>
