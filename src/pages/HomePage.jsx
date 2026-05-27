@@ -127,7 +127,7 @@ const HomePage = () => {
         </div>
       </div>
       {/* About section */}
-      <section className="w-full  mt-20 bg-[#4d0d75] text-white py-20 grid place-items-center">
+      <section className="w-full mt-20 bg-gradient-to-br from-green-900 via-emerald-700 to-lime-400 text-white py-20 grid place-items-center">
         <div className="w-full max-w-6xl">
           <div className="flex items-center gap-4 mb-10">
             <IoStarOutline className="w-8 h-8" />
