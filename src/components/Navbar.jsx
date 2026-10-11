@@ -7,13 +7,8 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full ">
-      <div className="max-w-6xl mx-auto  py-7 flex items-center justify-between">
-        <Link to="/" className="text-xl font-bold tracking-wide">
-          <figure>
-            <img src={Logo} alt="logo" />
-          </figure>
-        </Link>
+    <nav className="w-full h-16">
+      <div className=" flex   max-w-[900px] m-auto">
         <div className="hidden md:flex gap-8 text-lg">
           <Link to="/" className="hover:bg-violet-400 transition bg-white border-2 text-black px-4 py-1 rounded-xl">
             Home
@@ -28,6 +23,11 @@ const Navbar = () => {
             Contact
           </Link>
         </div>
+         <Link to="/" className="text-xl font-bold tracking-wide">
+          <figure className="h-14 w-14">
+            <img src={Logo} alt="logo" />
+          </figure>
+        </Link>
         <button
           className="md:hidden text-3xl"
           onClick={() => setOpen(!open)}

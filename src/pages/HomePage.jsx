@@ -86,7 +86,7 @@ const EmptyStar = () => {
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen margin-auto">
       <div className="grid grid-cols-2 w-full max-w-6xl mt-10 ">
         <div className="flex gap-4 mb-20">
           <div className="flex flex-col space-y-4">
@@ -99,7 +99,7 @@ const HomePage = () => {
             <p className="text-2xl w-[460px]">
               Hello there! I'm Roman and I'm a junior full stack developer.
             </p>
-            <div className="flex gap-3 mt-4">
+            {/* <div className="flex gap-3 mt-4">
               <button className="px-6 py-3 rounded-2xl flex items-center gap-2 text-white bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/10 transition">
                 <FaFilePdf className="text-red-300" />
                 CV
@@ -109,7 +109,7 @@ const HomePage = () => {
                 <FaFilePdf className="text-red-300" />
                 CV English
               </button>
-            </div>
+            </div> */}
             <div className="flex mt-4 gap-3">
               <Link
                 to="https://github.com/SweetCinnamonBun"
@@ -135,6 +135,62 @@ const HomePage = () => {
           </figure>
         </div>
       </div>
+      <section className=" w-full mt-10 grid place-items-center">
+        <div className="flex items-center w-full max-w-6xl gap-4 mt-20">
+          <FaBriefcase className="w-8 h-8" />
+          <h1 className="text-3xl font-bold text-amber-200">My Projects</h1>
+        </div>
+
+        {/* FULLSTACK PROJECTS */}
+        <section className="w-full max-w-6xl mt-14 text-black">
+          <h2 className="text-2xl font-bold mb-8 text-white underline">Fullstack Projects</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {fullstackProjects.map((project, index) => (
+              <Link to={project.link} key={index}>
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4">
+                    <h2 className="text-xl font-semibold mb-5">
+                      {project.title}
+                    </h2>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* FRONTEND PROJECTS */}
+        <section className="w-full max-w-6xl mt-20">
+          <h2 className="text-2xl font-bold mb-8 text-white underline">Frontend Projects</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
+            {projects.map((project, index) => (
+              <Link to={project.link} key={index} className="">
+                <div className="bg-white/5 border border-white/10 backdrop-blur-md
+                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="p-4 h-24">
+                    <h2 className="text-xl font-semibold mb-5">
+                      {project.title}
+                    </h2>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      </section>
       {/* About section */}
       <section className="w-full  mt-20  text-white py-20 grid place-items-center">
         <div className="w-full max-w-6xl">
@@ -331,62 +387,7 @@ const HomePage = () => {
           </div>
         </section>
       </section>
-      <section className=" w-full mt-10 grid place-items-center">
-        <div className="flex items-center w-full max-w-6xl gap-4 mt-20">
-          <FaBriefcase className="w-8 h-8" />
-          <h1 className="text-3xl font-bold text-amber-200">My Projects</h1>
-        </div>
-
-        {/* FULLSTACK PROJECTS */}
-        <section className="w-full max-w-6xl mt-14 text-black">
-          <h2 className="text-2xl font-bold mb-8 text-white underline">Fullstack Projects</h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {fullstackProjects.map((project, index) => (
-              <Link to={project.link} key={index}>
-                <div className="bg-white/5 border border-white/10 backdrop-blur-md
-                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4">
-                    <h2 className="text-xl font-semibold mb-5">
-                      {project.title}
-                    </h2>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-
-        {/* FRONTEND PROJECTS */}
-        <section className="w-full max-w-6xl mt-20">
-          <h2 className="text-2xl font-bold mb-8 text-white underline">Frontend Projects</h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
-            {projects.map((project, index) => (
-              <Link to={project.link} key={index} className="">
-                <div className="bg-white/5 border border-white/10 backdrop-blur-md
-                      shadow-[0_0_30px_rgba(56,189,248,0.1)]  rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 text-white">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover"
-                  />
-                  <div className="p-4 h-24">
-                    <h2 className="text-xl font-semibold mb-5">
-                      {project.title}
-                    </h2>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      </section>
+      
       <footer className="mt-24 w-full pt-6 pb-4 text-center border-t">
         <p>© {new Date().getFullYear()} Roman Klemiato. All rights reserved.</p>
       </footer>
